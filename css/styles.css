@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -12,7 +13,7 @@ body {
 }
 
 .left-container {
-  width: 40vw;
+  width: 35vw;
   background-image: url("../img/halie-west-unsplash.jpg");
   background-color: darkcyan;
   background-size: cover;
@@ -44,4 +45,107 @@ img {
 .photo-credit {
   color: white;
   margin-bottom: 1rem;
+}
+.photo-credit a {
+  color: white;
+  text-decoration: underline;
+}
+.photo-credit a:hover {
+  color: #98bb79;
+}
+
+.photo-credit a:active {
+  color: #7d9667;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 65vw;
+  background-color: hsl(257deg 24% 98%);
+}
+
+.introduction {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem 6rem 1rem 4rem;
+}
+.introduction > p {
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  background-color: white;
+  padding: 1rem 4rem 0rem 4rem;
+  box-shadow: 0px 5px 5px 0px #d4d4d4;
+
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #5c5c5c;
+}
+input {
+  width: 250px;
+  height: 1.5rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+input:focus {
+  border: 1px solid blue;
+  outline: none;
+  box-shadow: 2px 2px 5px 0px #d6d8da;
+}
+input:invalid {
+  border-color: rgb(177, 0, 0);
+}
+
+button {
+  width: 200px;
+  height: 3rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px 0px #d4d4d4;
+
+}
+
+.log-in {
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+.log-in a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
+.log-in a:hover {
+  color: #7d9667;
+}
+.log-in a:active {
+  color: #98bb79;
 }
