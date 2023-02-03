@@ -5,7 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+@font-face {
+  font-family: norseBold;
+  src: url(../fonts/norse-bold.otf);
+  font-weight: bold;
+}
 
 body {
   display: flex;
@@ -33,13 +37,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-img {
-  width: 100px;
+.logo img {
+  height: 7rem;
 }
 
 .website-name {
   color: white;
-  font-size: 3rem;
+  font-family: norseBold, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 5rem;
 }
 
 .photo-credit {
@@ -118,7 +124,10 @@ input:focus {
 input:invalid {
   border-color: rgb(177, 0, 0);
 }
-
+input:invalid::after {
+  content: "X";
+  
+}
 button {
   width: 200px;
   height: 3rem;
